@@ -1,11 +1,18 @@
 <!-- I bought Waveform Pro and now I can't edit the files because I encrypt them -->
+<?xml version="1.0" encoding="UTF-8"?>
+
 
 <!--byfore: -->
+<PRESET name="Sampler: Gedackt8-PipeOrgan" tags="Organ|Sampler" description=" Burea_Funeral_Chapel, PipOrgan Lars Palo, June 9th 2012"
+        path="C:\Users\Gea Tecnolog&#237;a\AppData\Roaming\Tracktion\Waveform\Presets"
+        filename="Sampler Gedackt8-PipeOrgan.trkpreset">
   <PLUGIN id="1010" type="sampler" windowLocked="0" enabled="1" windowX="392"
           windowY="589">
     <SOUND source="45cba4/2bc9302" name="036-C" startTime="0.0" length="0.0"
            keyNote="36" minNote="36" maxNote="36" gainDb="0.0" pan="0.0"/>
   </PLUGIN>
+</PRESET>
+
 
 <!--after:-->
 <PLUGIN type="vst" uid="0" filename="Multi Sampler" name="Multi Sampler"
