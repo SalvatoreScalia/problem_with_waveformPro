@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 11.1.0" projectID="724893/2d89abd" creationTime="1666493501158"
+      lastSignificantChange="1840375a69b" modifiedBy="Salvatore">
+  <TRANSPORT scrubInterval="0.1537173855918642" position="6.10150793651137"/>
+  <MACROPARAMETERS id="1001"/>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="120.0" curve="1.0"/>
+    <TIMESIG numerator="4" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <VIDEO/>
+  <AUTOMAPXML/>
+  <CLICKTRACK level="0.199526235461235"/>
+  <ID3VORBISMETADATA trackNumber="1" date="2022"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.6376281380653381" id="1003" enabled="1">
+      <MACROPARAMETERS id="1005"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS>
+    <RACK id="1002" name="Delay (chorus)">
+      <PLUGININSTANCE x="0.3056603773584906" y="0.3757225433526011">
+        <PLUGIN id="1004" type="delay" enabled="1" length="500" feedback="-2.400001525878906"
+                mix="1.0" quickParamName="feedback" presetDirty="1" windowX="160"
+                windowY="191" windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1006"/>
+          <FACEPLATE width="8" height="4" autoSize="1">
+            <RESOURCES/>
+          </FACEPLATE>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.5245283018867924" y="0.384393063583815">
+        <PLUGIN id="1008" type="4bandEq" enabled="1" phaseInvert="0" loGain="-10.06802749633789"
+                loFreq="357.5877685546875" loQ="0.4222362041473389" hiGain="-6.80272102"
+                hiFreq="8501.53418" hiQ="1.227059364318848" midGain1="3.265306234359741"
+                midFreq1="315.9567565917969" midQ1="1.009902477264404" midGain2="3.53741503"
+                midFreq2="1622.23706" midQ2="0.875288069" presetDirty="1" windowX="160"
+                windowY="191" windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1010"/>
+          <FACEPLATE width="8" height="4" autoSize="1">
+            <RESOURCES/>
+          </FACEPLATE>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.7377358490566037" y="0.407514450867052">
+        <PLUGIN id="1011" type="volume" enabled="1" volume="0.642241358757019"
+                pan="0.0" applyToMidi="0" ignoreVca="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1013"/>
+          <FACEPLATE width="8" height="4" autoSize="1">
+            <RESOURCES/>
+          </FACEPLATE>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.9584905660377359" y="0.4277456647398844">
+        <PLUGIN id="1015" type="level" showMidi="0" enabled="1" windowX="160"
+                windowY="191" windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1016"/>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.838983059" y="1">
+        <PLUGIN id="1019" type="level" showMidi="0" enabled="1" windowX="160"
+                windowY="191" windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1020"/>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.670702159" y="1">
+        <PLUGIN id="1023" type="volume" enabled="1" volume="0.6503009796142578"
+                pan="0" applyToMidi="0" ignoreVca="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1024"/>
+          <FACEPLATE width="8" height="4" autoSize="1">
+            <RESOURCES/>
+          </FACEPLATE>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.0830188679245283" y="0.3815028901734104">
+        <PLUGIN id="1026" type="chorus" enabled="1" depthMs="16.49760055541992"
+                speedHz="0.1000000014901161" width="1.0" mix="1" presetDirty="1"
+                mixProportion="0.9639999866485596" windowX="160" windowY="191"
+                windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1028"/>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <PLUGININSTANCE x="0.4886792452830189" y="0.7658959537572254">
+        <PLUGIN id="1029" type="text" title="read me" body="This rack is set up to provide a delay effect, with chorus and EQ applied just to the delay repeats and not the dry signal.&#10;&#10;The rack is set up as an insert effect, with the upper volume filter controlling the delay level and the lower volume filter controlling the dry level. To use this rack as a send effect simply mute or delete the lower volume filter and its level meter.&#10;&#10;The delay feedback can be adjusted using the quick controller on the filter icon.&#10;&#10;DW"
+                enabled="1" windowX="160" windowY="191" windowLocked="0">
+          <MODIFIERASSIGNMENTS/>
+          <MACROPARAMETERS id="1031"/>
+        </PLUGIN>
+      </PLUGININSTANCE>
+      <CONNECTION src="1008" srcPin="1" dst="1011" dstPin="1"/>
+      <CONNECTION src="1008" srcPin="0" dst="1011" dstPin="0"/>
+      <CONNECTION src="1008" srcPin="2" dst="1011" dstPin="2"/>
+      <CONNECTION src="1004" srcPin="0" dst="1008" dstPin="0"/>
+      <CONNECTION src="1004" srcPin="1" dst="1008" dstPin="1"/>
+      <CONNECTION src="1004" srcPin="2" dst="1008" dstPin="2"/>
+      <CONNECTION src="1015" srcPin="1" dst="0" dstPin="1"/>
+      <CONNECTION src="1015" srcPin="2" dst="0" dstPin="2"/>
+      <CONNECTION src="1011" srcPin="1" dst="1015" dstPin="1"/>
+      <CONNECTION src="1011" srcPin="2" dst="1015" dstPin="2"/>
+      <CONNECTION src="1011" srcPin="0" dst="1015" dstPin="0"/>
+      <CONNECTION src="1015" srcPin="0" dst="0" dstPin="0"/>
+      <CONNECTION src="1019" srcPin="1" dst="0" dstPin="1"/>
+      <CONNECTION src="0" srcPin="2" dst="1023" dstPin="2"/>
+      <CONNECTION src="0" srcPin="1" dst="1023" dstPin="1"/>
+      <CONNECTION src="1023" srcPin="1" dst="1019" dstPin="1"/>
+      <CONNECTION src="1023" srcPin="2" dst="1019" dstPin="2"/>
+      <CONNECTION src="1019" srcPin="2" dst="0" dstPin="2"/>
+      <CONNECTION src="1026" srcPin="1" dst="1004" dstPin="1"/>
+      <CONNECTION src="1026" srcPin="2" dst="1004" dstPin="2"/>
+      <CONNECTION src="0" srcPin="0" dst="1026" dstPin="0"/>
+      <CONNECTION src="0" srcPin="1" dst="1026" dstPin="1"/>
+      <CONNECTION src="0" srcPin="2" dst="1026" dstPin="2"/>
+      <CONNECTION src="1026" srcPin="0" dst="1004" dstPin="0"/>
+      <INPUT name="midi input" midi="0"/>
+      <INPUT name="input 1 (left)" midi="0"/>
+      <INPUT name="input 2 (right)" midi="0"/>
+      <OUTPUT name="midi output" midi="0"/>
+      <OUTPUT name="output 1 (left)" midi="0"/>
+      <OUTPUT name="output 2 (right)" midi="0"/>
+      <MACROPARAMETERS id="1033"/>
+      <WINDOWSTATE windowPos="80 111 943 635" active="1" windowLocked="1"/>
+      <MODIFIERS/>
+      <FACEPLATE width="8" height="4" autoSize="1">
+        <RESOURCES/>
+      </FACEPLATE>
+    </RACK>
+  </RACKS>
+  <MASTERPLUGINS/>
+  <AUXBUSNAMES/>
+  <INPUTDEVICES>
+    <INPUTDEVICE name="Teclado2"/>
+    <INPUTDEVICE name="Teclado3"/>
+    <INPUTDEVICE name="Teclado1"/>
+    <INPUTDEVICE name="Piano4"/>
+    <INPUTDEVICE name="Teclado4"/>
+    <INPUTDEVICE name="Teclado5"/>
+    <INPUTDEVICE name="Teclado 6(Casio)"/>
+    <INPUTDEVICE name="Teclado7(Casio)"/>
+    <INPUTDEVICE name="Teclado8(Casio)"/>
+    <INPUTDEVICE name="Teclado9(Casio)"/>
+    <INPUTDEVICE name="Input 1">
+      <INPUTDEVICEDESTINATION targetTrack="1012" targetIndex="0" armed="1"/>
+      <INPUTDEVICEDESTINATION targetTrack="1002" targetIndex="0" armed="1"/>
+    </INPUTDEVICE>
+    <INPUTDEVICE name="Input 2">
+      <INPUTDEVICEDESTINATION targetTrack="1025" targetIndex="0" armed="1"/>
+    </INPUTDEVICE>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <ARADOCUMENT/>
+  <CONTROLLERMAPPINGS/>
+  <VIEWSTATE minimalTransportBar="1" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" disabledSearchLibraries="" enabledTrackTags=""
+             currentSidePanel="Search" viewleft="-0.3842934639796604" viewright="7.301575815613547"
+             tracktop="0.0" scrollWhenPlaying="1" midiEditorShown="1" midiEditorHeight="0.199999988079071"
+             sidePanelsWidth="1.0" sidePanelsShown="0"/>
+  <EDITMIXGROUPS/>
+  <AUDIOEDITING/>
+  <MIDIVIEWSTATE verticalOffset="0.06619992491019555" visibleProportion="0.3242098886627526"
+                 leftTime="-0.9478156518161995" rightTime="16.15121460561932"/>
+  <ARRANGERTRACK name="Arranger" id="1116">
+    <MACROPARAMETERS id="1118"/>
+    <MODIFIERS/>
+  </ARRANGERTRACK>
+  <TEMPOTRACK name="Global" id="1121">
+    <MACROPARAMETERS id="1123"/>
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MARKERTRACK id="1007">
+    <MACROPARAMETERS id="1009"/>
+    <MODIFIERS/>
+  </MARKERTRACK>
+  <CHORDTRACK name="Chords" id="1126">
+    <MACROPARAMETERS id="1128"/>
+    <MODIFIERS/>
+  </CHORDTRACK>
+  <TRACK height="54.46515749682603" id="1002" midiVProp="0.28125" midiVOffset="0.359375">
+    <MACROPARAMETERS id="1014"/>
+    <MODIFIERS/>
+    <PLUGIN type="volume" id="1016" enabled="1">
+      <MACROPARAMETERS id="1019"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1024" enabled="1">
+      <MACROPARAMETERS id="1134"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1025" midiVProp="0.28125" midiVOffset="0.359375" colour="ffffaa00"
+         height="54.46515749682603">
+    <MACROPARAMETERS id="1027"/>
+    <MODIFIERS/>
+    <PLUGIN type="volume" id="1030" enabled="1">
+      <MACROPARAMETERS id="1031"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1034" enabled="1">
+      <MACROPARAMETERS id="1035"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1038" midiVProp="0.28125" midiVOffset="0.359375" colour="ffaaff00"
+         height="83.50722075512704" verticalOffset="0.0" visibleProportion="0.6209289060367423"
+         solo="0">
+    <MACROPARAMETERS id="1040"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="0.0" length="6.0" offset="0.0" id="1010"
+              sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="84" b="0.02315928786993027" l="0.1858188062906265" v="96"
+              c="0"/>
+        <NOTE p="84" b="0.5107948184013367" l="0.1857767105102539" v="96" c="0"/>
+        <NOTE p="84" b="1.253876566886902" l="0.3134380877017975" v="96" c="0"/>
+        <NOTE p="96" b="1.509281873703003" l="0.1857431381940842" v="96" c="0"/>
+        <NOTE p="96" b="2.008484125137329" l="0.1857971847057343" v="96" c="0"/>
+        <NOTE p="84" b="2.252394437789917" l="0.1856361925601959" v="96" c="0"/>
+        <NOTE p="96" b="2.751540899276733" l="0.1857488304376602" v="96" c="0"/>
+        <NOTE p="84" b="3.250772714614868" l="0.3134443461894989" v="96" c="0"/>
+        <NOTE p="98" b="3.506197929382324" l="0.1857408583164215" v="96" c="0"/>
+        <NOTE p="84" b="4.005370130762458" l="0.1858051419258118" v="96" c="0"/>
+        <NOTE p="84" b="4.504600286483765" l="0.1858057230710983" v="96" c="0"/>
+        <NOTE p="84" b="5.259278416633606" l="0.313495546579361" v="96" c="0"/>
+        <NOTE p="96" b="5.503084540367126" l="0.1858017295598984" v="96" c="0"/>
+        <NOTE p="96" b="6.002333402633667" l="0.1857516765594482" v="96" c="0"/>
+        <NOTE p="84" b="6.257704019546509" l="0.1857920587062836" v="96" c="0"/>
+        <NOTE p="96" b="6.756976366043091" l="0.185761347413063" v="96" c="0"/>
+        <NOTE p="84" b="7.256233692169189" l="0.3134562969207764" v="96" c="0"/>
+        <NOTE p="98" b="7.5" l="0.1857596337795258" v="96" c="0"/>
+        <NOTE p="84" b="8.010860662907362" l="0.1857892125844955" v="96" c="0"/>
+        <NOTE p="84" b="8.510074317455292" l="0.1858068555593491" v="96" c="0"/>
+        <NOTE p="84" b="9.253122568130493" l="0.3134682476520538" v="96" c="0"/>
+        <NOTE p="96" b="9.50852382183075" l="0.185850664973259" v="96" c="0"/>
+        <NOTE p="96" b="10.00786662101746" l="0.1856691837310791" v="96" c="0"/>
+        <NOTE p="84" b="10.25160956382751" l="0.1857493966817856" v="96" c="0"/>
+        <NOTE p="96" b="10.75083184242249" l="0.1857710182666779" v="96" c="0"/>
+        <NOTE p="84" b="11.25003457069397" l="0.3134255707263947" v="96" c="0"/>
+        <NOTE p="98" b="11.50545358657837" l="0.185827910900116" v="96" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR mode="3" octave="6" hash="-1313737033961205334">
+        <PROGRESSION>
+          <PROGRESSIONITEM name="i"/>
+        </PROGRESSION>
+        <BASSPATTERN name="Acid 1">
+          <BAR length="4">
+            <NOTE start="0.034888526760596505483" length="0.18581880256533622742"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="0.52252407219316410192" length="0.18577670492231845856"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.2656058574659709848" length="0.31343809841200709343"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.5210111358767335332" length="0.1857431395910680294"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.0202134231669788278" length="0.18579718377441167831"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.2641236403590028203" length="0.18563618790358304977"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="2.7632701763516251958" length="0.18574882810935378075"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="3.2625020452408080018" length="0.31344435736536979675"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="3.5179272353282158292" length="0.18574086437001824379"
+                  velocity="96" pitch="1" octave="1"/>
+          </BAR>
+          <BAR length="4">
+            <NOTE start="0.017099371515769234975" length="0.18580514844506978989"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="0.51632953468765663274" length="0.18580571701750159264"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.2710076429514174379" length="0.31349555635824799538"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.5148137531807606138" length="0.18580173514783382416"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.014062689487445823" length="0.18575167283415794373"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.2694332658877556241" length="0.18579206429421901703"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="2.7687055262369995035" length="0.18576134368777275085"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="3.267962995786774627" length="0.3134563034400343895" velocity="96"
+                  pitch="0" octave="0"/>
+            <NOTE start="3.511729284059811107" length="0.18575963703915476799"
+                  velocity="96" pitch="1" octave="1"/>
+          </BAR>
+          <BAR length="4">
+            <NOTE start="0.02258990412633465894" length="0.18578921910375356674"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="0.5218035689188127435" length="0.18580685555934906006"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.2648517888603691972" length="0.31346824998036026955"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.5202530854014639772" length="0.18585065938532352448"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.0195958883134608186" length="0.18566918373107910156"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.2633388520782773412" length="0.18574939761310815811"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="2.7625610505795066274" length="0.18577101454138755798"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="3.2617639064421837247" length="0.31342558329924941063"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="3.5171828389732127107" length="0.18582790391519665718"
+                  velocity="96" pitch="1" octave="1"/>
+          </BAR>
+          <BAR length="4">
+            <NOTE start="0.016404467505026332219" length="0.18579547805711627007"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="0.51563235545586394437" length="0.18581993924453854561"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.2702695041527931608" length="0.31349157402291893959"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="1.5140949560893659509" length="0.18580401130020618439"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.0133017947530333913" length="0.18583188625052571297"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="2.2687662377586548246" length="0.18571241945028305054"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="2.7680157431034331239" length="0.18576817028224468231"
+                  velocity="96" pitch="0" octave="1"/>
+            <NOTE start="3.2673113279608969606" length="0.31337267672643065453"
+                  velocity="96" pitch="0" octave="0"/>
+            <NOTE start="3.5226363934209530271" length="0.18578068632632493973"
+                  velocity="96" pitch="1" octave="1"/>
+          </BAR>
+        </BASSPATTERN>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="sampler" windowLocked="1" id="1157" enabled="1" presetDirty="1"
+            windowX="988" windowY="258">
+      <MACROPARAMETERS id="1158"/>
+      <SOUND source="724893/524d0" name="AmpedPad 036" startTime="0.0" length="0.0"
+             keyNote="24" minNote="24" maxNote="44" gainDb="0.0" pan="0.0"/>
+      <MODIFIERASSIGNMENTS/>
+      <SOUND source="724893/2e0efe1" name="AmpedPad 037" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/282b4ec" name="AmpedPad 038" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/cd3044" name="AmpedPad 039" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/279e573" name="AmpedPad 040" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1f2f99" name="AmpedPad 041" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/168cf01" name="AmpedPad 042" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/875847" name="AmpedPad 043" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2cf4fe7" name="AmpedPad 044" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/11ce27c" name="AmpedPad 045" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/49e501" name="AmpedPad 046" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2574da1" name="AmpedPad 047" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/528a66" name="AmpedPad 048" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1eab342" name="AmpedPad 049" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/c7698c" name="AmpedPad 050" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/399afc2" name="AmpedPad 051" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/5e7f92" name="AmpedPad 052" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3b30aec" name="AmpedPad 053" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/fe2150" name="AmpedPad 054" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/23022d" name="AmpedPad 055" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3bb310" name="AmpedPad 056" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3727b81" name="AmpedPad 057" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/223d1d1" name="AmpedPad 058" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1ccaf96" name="AmpedPad 059" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/286b7c1" name="AmpedPad 060" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3db5b0d" name="AmpedPad 061" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3827b92" name="AmpedPad 062" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/27b8b59" name="AmpedPad 063" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2c69ade" name="AmpedPad 064" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2dd2e30" name="AmpedPad 065" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/20ed4ac" name="AmpedPad 066" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/25248ff" name="AmpedPad 067" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3952752" name="AmpedPad 068" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3b1269c" name="AmpedPad 069" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1a3f9e7" name="AmpedPad 070" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1200eba" name="AmpedPad 071" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/20b8e17" name="AmpedPad 072" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/27aeebd" name="AmpedPad 073" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/29d9d67" name="AmpedPad 074" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/86c49b" name="AmpedPad 075" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/33838f3" name="AmpedPad 076" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/38540f0" name="AmpedPad 077" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/23d5afc" name="AmpedPad 078" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/db0f50" name="AmpedPad 079" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2bf5658" name="AmpedPad 080" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/2395d86" name="AmpedPad 081" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/304b15" name="AmpedPad 082" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/23e024c" name="AmpedPad 083" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/8805c6" name="AmpedPad 084" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3cc57f3" name="AmpedPad 085" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3e86e88" name="AmpedPad 086" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/393820c" name="AmpedPad 087" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/324f560" name="AmpedPad 088" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/1326871" name="AmpedPad 089" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/a31e1d" name="AmpedPad 090" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/13d0c69" name="AmpedPad 091" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3b9ba40" name="AmpedPad 092" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/37bf460" name="AmpedPad 093" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/24349fa" name="AmpedPad 094" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/3429a5" name="AmpedPad 095" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+      <SOUND source="724893/33f3608" name="AmpedPad 096" startTime="0.0" length="0.0"
+             keyNote="72" minNote="48" maxNote="96" gainDb="0.0" pan="0.0"/>
+    </PLUGIN>
+    <PLUGIN type="rack" rackType="1002" enabled="1" id="1061" windowX="2000"
+            windowY="103" windowLocked="0">
+      <MACROPARAMETERS id="1062"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1043" enabled="1">
+      <MACROPARAMETERS id="1044"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1047" enabled="1">
+      <MACROPARAMETERS id="1048"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK height="66.47349216480946" solo="0" id="1045" midiVProp="0.28125"
+         midiVOffset="0.359375" verticalOffset="0.75" visibleProportion="0.25">
+    <MACROPARAMETERS id="1053"/>
+    <MODIFIERS/>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="0.0" length="15.99997732426304" offset="0.0" id="1114"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="16.0" length="15.99997732426304" offset="0.0" id="1050"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="32.0" length="15.99997732426304" offset="0.0" id="1054"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="48.0" length="15.99997732426304" offset="0.0" id="1057"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="64.0" length="15.99997732426304" offset="0.0" id="1060"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="80.0" length="15.99997732426304" offset="0.0" id="1068"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2893278-0221006-vibes-intro-drum-loop-1-of-3"
+               start="96.0" length="15.99997732426304" offset="0.0" id="1075"
+               source="724893/303e5c9" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="31.99995464852608" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="looperman-l-2264000-0225973-morfo-drum" start="112.5" length="10.0"
+               offset="2.0" id="1175" source="724893/239586d" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ff00">
+      <LOOPINFO rootNote="-1" numBeats="27.42857142857143" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1076" enabled="1" volume="0.6847836971282959"
+            windowX="2000" windowY="103" windowLocked="0">
+      <MACROPARAMETERS id="1080"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1085" enabled="1">
+      <MACROPARAMETERS id="1088"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1156" midiVProp="0.28125" midiVOffset="0.359375" colour="ffff0000"
+         height="76.4098181139117">
+    <MACROPARAMETERS id="1163"/>
+    <MODIFIERS/>
+    <PLUGIN type="volume" id="1166" enabled="1">
+      <MACROPARAMETERS id="1167"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1170" enabled="1">
+      <MACROPARAMETERS id="1171"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1064" midiVProp="0.28125" midiVOffset="0.359375" colour="ff00ffaa"
+         height="54.46515749682603">
+    <MACROPARAMETERS id="1066"/>
+    <MODIFIERS/>
+    <AUDIOCLIP name="091_rsmus7 - C2-L" start="0.0" length="9.273809523809524"
+               offset="0.0" id="1138" source="724893/7f4fa3" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ffaa">
+      <LOOPINFO rootNote="-1" numBeats="18.54761904761905" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="091_rsmus7 - C2-L" start="16.0" length="9.273809523809524"
+               offset="0.0" id="1089" source="724893/7f4fa3" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ffaa">
+      <LOOPINFO rootNote="-1" numBeats="18.54761904761905" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="091_rsmus7 - C2-L" start="32.0" length="9.273809523809526"
+               offset="0.0" id="1148" source="724893/7f4fa3" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ffaa">
+      <LOOPINFO rootNote="-1" numBeats="18.54761904761905" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="091_rsmus7 - C2-L" start="48.0" length="9.273809523809518"
+               offset="0.0" id="1159" source="724893/7f4fa3" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ffaa">
+      <LOOPINFO rootNote="-1" numBeats="18.54761904761905" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="091_rsmus7 - C2-L" start="64.0" length="9.273809523809518"
+               offset="0.0" id="1140" source="724893/7f4fa3" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00ffaa" fadeOut="6.858203365628368">
+      <LOOPINFO rootNote="-1" numBeats="18.54761904761905" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1069" enabled="1">
+      <MACROPARAMETERS id="1070"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1073" enabled="1">
+      <MACROPARAMETERS id="1074"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1077" midiVProp="0.28125" midiVOffset="0.359375" colour="ff00aaff"
+         height="54.46515749682603">
+    <MACROPARAMETERS id="1079"/>
+    <MODIFIERS/>
+    <AUDIOCLIP name="3drecord" start="0.0" length="26.24997732426304" offset="0.0"
+               id="1142" source="724893/a72467" sync="0" elastiqueMode="0" pan="0.0"
+               colour="ff00aaff" loopStart="0.0" loopLength="13.12498866213152">
+      <LOOPINFO rootNote="-1" numBeats="26.24997732426304" oneShot="1" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="amp" start="15.0" length="0.3982993197278919" offset="0.0"
+               id="1097" source="724893/1ea6a57" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00aaff">
+      <LOOPINFO rootNote="-1" numBeats="0.7965986394557824" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="BrainDampLead 069" start="19.5" length="10.3" offset="0.0"
+               id="1106" source="724893/2a27d35" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00aaff">
+      <LOOPINFO rootNote="-1" numBeats="20.6" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="BrainDampLead 069" start="51.5" length="10.3" offset="0.0"
+               id="1133" source="724893/2a27d35" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00aaff">
+      <LOOPINFO rootNote="-1" numBeats="20.6" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="amp" start="59.0" length="0.3982993197278972" offset="0.0"
+               id="1145" source="724893/1ea6a57" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff00aaff">
+      <LOOPINFO rootNote="-1" numBeats="0.7965986394557824" oneShot="0" denominator="4"
+                numerator="4" bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1082" enabled="1">
+      <MACROPARAMETERS id="1083"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1086" enabled="1">
+      <MACROPARAMETERS id="1087"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1090" midiVProp="0.28125" midiVOffset="0.359375" colour="ff0000ff"
+         height="54.46515749682603">
+    <MACROPARAMETERS id="1092"/>
+    <MODIFIERS/>
+    <AUDIOCLIP name="A fare fight 057" start="8.5" length="15.0" offset="0.0"
+               id="1146" source="724893/3824733" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff0000ff">
+      <LOOPINFO rootNote="-1" numBeats="30.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="A fare fight 057" start="40.5" length="15.0" offset="0.0"
+               id="1129" source="724893/3824733" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff0000ff">
+      <LOOPINFO rootNote="-1" numBeats="30.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="A fare fight 075" start="64.0" length="15.0" offset="0.0"
+               id="1119" source="724893/2df4eb1" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ff0000ff">
+      <LOOPINFO rootNote="-1" numBeats="30.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1095" enabled="1" volume="0.5856457948684692"
+            windowX="2000" windowY="103" windowLocked="0">
+      <MACROPARAMETERS id="1096"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="chorus" windowLocked="1" id="1111" enabled="1" depthMs="7.377999782562256"
+            presetDirty="1" speedHz="2.544399976730347" width="0.5720000267028809"
+            windowX="1300" windowY="543">
+      <MACROPARAMETERS id="1125"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1099" enabled="1">
+      <MACROPARAMETERS id="1100"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1103" midiVProp="0.28125" midiVOffset="0.359375" colour="ffaa00ff"
+         height="54.46515749682603">
+    <MACROPARAMETERS id="1105"/>
+    <MODIFIERS/>
+    <AUDIOCLIP name="A fare fight 045" start="14.0" length="15.0" offset="0.0"
+               id="1150" source="724893/2a20b26" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ffaa00ff">
+      <LOOPINFO rootNote="-1" numBeats="30.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <AUDIOCLIP name="A fare fight 045" start="46.0" length="15.0" offset="0.0"
+               id="1101" source="724893/2a20b26" sync="0" elastiqueMode="0"
+               pan="0.0" colour="ffaa00ff">
+      <LOOPINFO rootNote="-1" numBeats="30.0" oneShot="0" denominator="4" numerator="4"
+                bpm="0.0" inMarker="0" outMarker="-1"/>
+    </AUDIOCLIP>
+    <PLUGIN type="volume" id="1108" enabled="1">
+      <MACROPARAMETERS id="1109"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1112" enabled="1">
+      <MACROPARAMETERS id="1113"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
